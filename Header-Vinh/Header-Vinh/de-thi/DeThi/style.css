@@ -1,0 +1,114 @@
+body,
+html {
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.6;
+}
+
+.sidebar {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  height: 40%;
+  width: 100px;
+  background-image: linear-gradient(to top, rgba(117, 168, 219, 0.333), #58e9a5);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.clock {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.content {
+  margin-left: 80px;
+  padding: 20px;
+}
+
+.row {
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.p-t-12,
+.col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.justify-content-center {
+  justify-content: center
+}
+
+.text-center {
+  text-align: center
+}
+
+.text-primary {
+  color: #3490dc;
+  font-size: 35px;
+}
+
+.quiz-answer-item {
+  margin: 40px 20% 0 20%;
+  border: 3px solid #b3b8bd;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.number-question {
+  color: coral;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title-question {
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+.answer-check {
+  margin-top: 15px;
+}
+
+.answer-option {
+  margin: 10px 0;
+}
+
+
+.button-send {
+  background-color: #56ca5a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-left: 50%;
+  margin-top: 5em;
+  margin-bottom: 5rem;
+}
+
+.button-send:hover {
+  background-color: #17631a;
+  /* background-color:#9d9e9f; */
+  /* Màu nền của button khi rê chuột vào */
+}
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trac nghiem online - Exam</title>
+
+    <link rel="stylesheet" href="./assets/css/exam.css">
+    <link rel="stylesheet" href="./assets/img/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="Modal-exam js-modal-exam">
+
+            <div id="header">
+                    <!-- <h3>TRAC NGHIEM</h3> -->
+                    <ul id="nav">
+                        <div class="trac-no">
+                            <a href="http://127.0.0.1:3000/Web_trac_nghiem/Header-Vinh/main/trac_nghiem.html">TRAC NGHIEM</a>
+                        </div>
+            
+                        <li>
+                            <a href="">
+                                THI THPTQG
+                            </a>
+                            <ul class="subnav"> 
+                                
+                                <li><a href="https://tracnghiem.net/thptqg/toan-hoc/">Toán</a></li>
+                                <li><a href="">Ngữ Văn</a></li>
+                                <li><a href="https://tracnghiem.net/thptqg/tieng-anh/">Anh Văn</a></li>
+                                <li><a href="https://tracnghiem.net/thptqg/vat-ly/">Vật lý</a></li>
+                                <li><a href="https://tracnghiem.net/thptqg/hoa-hoc/">Hóa học</a></li>
+                                <li><a href="https://tracnghiem.net/thptqg/sinh-hoc/">Sinh học</a></li>
+                            </ul>
+                        </li>
+            
+                        <li>
+                            <a href="">ENGLISH TEST</a>
+            
+                            <ul class="subnav">
+                                <li><a href="">Ielts</a></li>
+                                <li><a href="">Toeic</a></li>
+                                <li><a href="">Ngữ pháp</a></li>
+                            </ul>
+                        </li>
+            
+                        <li>
+                            <a href="">IT TEST</a>
+            
+                            <ul class="subnav">
+                                <li><a href="">Tin học</a></li>
+                                <li><a href="">Lập trình</a></li>
+                                <li><a href="">AI</a></li>
+                            </ul>
+                        </li>
+            
+                        <li>
+                            <a href="">TẠO ĐỀ THI</a>
+                        </li>
+            
+                        <div class="logIn-btn">
+                            <a class="lg-btn js-logIn">Đăng nhập <i class="fa-solid fa-user"></i></a>
+                            <!-- <a class="js-logIn" href="">Đăng nhập</a> -->
+                            
+                        </div>
+                    </ul>
+            </div>
+    
+    
+            <div class="ctn-exam js-ctn-exam">
+                    <div class="box-content">
+                        <div class="exam-header">
+                        <h1>Đề trắc nghiệm Toán lớp 12</h1>
+                        </div>
+        
+                        <div class="choose-class-subject">
+                            <label class="lb-ex" for="Subject">B1: Chọn lớp và môn</label> <br>
+            
+                            <select name="Class" class="cbo-ex">
+                                <option value="1">Lớp 6</option>
+                                <option value="2">Lớp 7</option>
+                                <option value="3">Lớp 8</option>
+                                <option value="4">Lớp 9</option>
+                                <option value="5">Lớp 10</option>
+                                <option value="6">Lớp 11</option>
+                                <option value="7">Lớp 12</option>
+                            </select>
+            
+                            <select name="cbo-subject" class="cbo-ex">
+                                <option value="1">Toán</option>
+                                <option value="2">Văn</option>
+                                <option value="3">Anh</option>
+                                <option value="4">Lý</option>
+                                <option value="5">Hóa</option>
+                                <option value="6">Sinh</option>
+                            </select>
+                        </div>
+            
+                        <div class="type-test">
+                            <label class=lb-ex for="type">B2: Loại để</label> <br>
+    
+                            <!-- <table>
+                                <thead>
+                                    <th>Đề thi giữa kì, học kì</th>
+                                    <th>Đề kiểm tra 1 tiết</th>
+                                    <th>Đề kiểm tra 15 phút</th>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>50 câu/60'</td>
+                                        <td>30 câu/45'</td>
+                                        <td>10 câu/15'</td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+    
+                            <div class="type-list">
+                                <div class="step1-elm1">
+                                    <p class="text-list">
+                                        Đề thi giữa kì, học kì <br>
+                                        50 câu/60'
+                                    </p>
+                                    
+                                </div>
+    
+                                <div class="step1-elm2">
+                                    <p class="text-list">
+                                        Đề kiểm tra 1 tiết <br>
+                                        30 câu/45'
+                                    </p>
+                                </div>
+    
+                                <div class="step1-elm3">
+                                    <p class="text-list">
+                                        Đề kiểm tra 15 phút <br>
+                                        10 câu/15'
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        
+                        <div class="choose-content">
+                            <label class=lb-ex for="type">B3: Chọn nội dung</label> <br>
+                            
+                            <div class="type-list2">
+                                <a class="elm1">Đề thi thử</a>
+                                <a class="elm2">Trộn đề tự động</a>
+                            </div>
+                        </div>
+            
+                        <div class="exam-before">
+                            <div class="content-ex-before">
+                                <h2 class="header-text">Đề thi học kì I môn toán năm 2022-2023</h2>
+                                <p class="school">Trường THPT Hùng Vương</p>
+                                <input type="date" class="day-ex" name="day-ex" required>
+                                <i class="fa-solid fa-user"></i>
+                                <span>594 lượt thi</span>
+                            
+    
+                                <div class="progress-box">
+                                    <span class="progress">
+                                        0/40
+                                        <div class="pg-box"></div>
+                                    </span>
+    
+                                    <span class="progress-btn">
+                                        <p>Bắt đầu thi</p>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="exam-before">
+                            <div class="content-ex-before">
+                                <h2 class="header-text">Đề thi học kì I môn toán năm 2022-2023</h2>
+                                <p class="school">Trường THPT Hùng Vương</p>
+                                <input type="date" class="day-ex" name="day-ex" required>
+                                <i class="fa-solid fa-user"></i>
+                                <span>594 lượt thi</span>
+                            
+    
+                                <div class="progress-box">
+                                    <span class="progress">
+                                        0/40
+                                        <div class="pg-box"></div>
+                                    </span>
+    
+                                    <span class="progress-btn">
+                                        <p>Bắt đầu thi</p>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exam-before">
+                            <div class="content-ex-before">
+                                <h2 class="header-text">Đề thi học kì I môn toán năm 2022-2023</h2>
+                                <p class="school">Trường THPT Hùng Vương</p>
+                                <input type="date" class="day-ex" name="day-ex" required>
+                                <i class="fa-solid fa-user"></i>
+                                <span>594 lượt thi</span>
+                            
+    
+                                <div class="progress-box">
+                                    <span class="progress">
+                                        0/40
+                                        <div class="pg-box"></div>
+                                    </span>
+    
+                                    <span class="progress-btn">
+                                        <p>Bắt đầu thi</p>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exam-before">
+                            <div class="content-ex-before">
+                                <h2 class="header-text">Đề thi học kì I môn toán năm 2022-2023</h2>
+                                <p class="school">Trường THPT Hùng Vương</p>
+                                <input type="date" class="day-ex" name="day-ex" required>
+                                <i class="fa-solid fa-user"></i>
+                                <span>594 lượt thi</span>
+                            
+    
+                                <div class="progress-box">
+                                    <span class="progress">
+                                        0/40
+                                        <div class="pg-box"></div>
+                                    </span>
+    
+                                    <span class="progress-btn">
+                                        <p>Bắt đầu thi</p>
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

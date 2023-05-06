@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav{
+    padding-left: 100px;
+}
+
+#nav .trac-no{
+    padding-right: 100px;
+    padding-top: 2px;
+    line-height: 42px;
+    display: inline-block;
+}
+
+#nav .trac-no a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(249, 144, 24);
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: azure;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#nav .subnav a {
+    color: #000000;
+    margin: 4px 4px;
+}
+
+#nav .subnav li {
+    display: inline-block;
+    text-align: center;
+}
+
+#nav > .subnav > a {
+    /* text-align: center; */
+    
+}
+
+#nav > .subnav > li {
+    /* position: absolute; */
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: orange;
+}
+
+#nav .subnav a:hover {
+    color:red;
+}
+
+#nav > li{
+    display: inline-block;
+    padding: 0 25px;
+    /* line-height: 46px; */
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+    margin: 0 20px;
+    margin-bottom: -2px;
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 5px;
+    line-height: 44px;
+    display: inline-block; 
+    /* width: auto; */
+    /* margin: 0 30px */
+}
+
+#nav .logIn-btn{
+    float: right;
+    width: 160px;
+    height: 36px;
+    background-color:lemonchiffon;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 70px;
+    margin-top: 5px;
+    color: #000;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#nav .logIn-btn:hover{
+    background-color:khaki;
+    cursor: pointer;
+}
+
+
+
+.modal-exam{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+    text-decoration: none;
+
+    animation: animation-md-exam ease 1s;
+
+}
+
+.modal-exam.open{
+    display: flex;
+}
+
+.modal-exam .ctn-exam.open{
+    display: flex;
+}
+
+.modal-exam .ctn-exam{
+    width: 1000px;
+    height: 1000px;
+    margin-top: 50px;
+    
+    
+    position:fixed;
+    /* background-color: aquamarine; */
+    /*align-items: center; 
+    justify-content: center; */
+    animation: animation-md-exam ease 1s;
+
+}
+
+.Modal-exam .box-content{
+    margin: 0 40px;
+    margin-left: 340px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.modal-exam .exam-header{
+    margin: 32px 0 20px;
+}
+
+.choose-class-subject{
+    margin-top: 10px;
+}
+
+.choose-class-subject .Class{
+
+}
+
+.choose-class-subject .cbo-ex{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.ctn-exam .lb-ex{
+     font-weight: bold;
+     color: red;
+     /* padding-bottom: 100px; */
+}
+
+.ctn-exam .cbo-ex{
+    font-size: 20px;
+    width: 33%;
+    height: 36px;
+    margin: 10px 10px 30px;
+}
+
+.ctn-exam .type-list{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.ctn-exam .type-list2{
+    margin-top: 10px;
+}
+
+.ctn-exam .step1-elm1{
+    float: left;
+    width: 180px;
+    height: 70px;
+    background-color:bisque;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    border-radius: 8px;
+}
+
+.ctn-exam .step1-elm1:hover{
+    background-color:rgb(255, 215, 165);
+    cursor: pointer;
+}
+
+.ctn-exam .step1-elm2{
+    float: left;
+    width: 180px;
+    height: 70px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    border-radius: 8px;
+}
+
+.ctn-exam .step1-elm2:hover{
+    background-color:rgb(255, 215, 165);
+    cursor: pointer;
+}
+
+.ctn-exam .step1-elm3{
+    float: left;
+    /* display: block; */
+    width: 180px;
+    height: 70px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    /* margin-right: 100px; */
+    border-radius: 8px;
+}
+
+.ctn-exam .step1-elm3:hover{
+    background-color:rgb(255, 215, 165);
+    cursor: pointer;
+}
+
+.ctn-exam .choose-content{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.ctn-exam .elm1{
+    float: left;
+    /* display: inline-block; */
+    width: 180px;
+    height: 70px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ctn-exam .elm1:hover{
+    background-color:rgb(255, 215, 165);
+    cursor: pointer;
+}
+
+.ctn-exam .elm2{
+    float: left;
+    /* display: inline-block; */
+    width: 180px;
+    height: 70px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ctn-exam .elm2:hover{
+    background-color:rgb(255, 215, 165);
+    cursor: pointer;
+}
+
+
+.ctn-exam .exam-before{
+    width: 800px;
+    height: 200px;
+    /* margin: 0 20px; */
+    margin-top: 20px;
+    background-color:beige;
+    
+}
+
+.ctn-exam .content-ex-before{
+    margin: 10px 20px;
+}
+
+.ctn-exam .header-text{
+    /* margin: 0px 20px 20px; */
+}
+
+.ctn-exam .school{
+    margin: 20px 0px;
+}
+
+.ctn-exam .day-ex{
+    margin-right: 50px;
+}
+
+.ctn-exam .progress-box{
+    margin-top: 40px;
+}
+
+.ctn-exam .pg-box{
+    width: 630px;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+
+.ctn-exam .progress-btn{
+    display: block;
+    width: 120px;
+    height: 36px;
+    background-color:gold;
+    margin-left: 640px;
+    margin-top: -36px;
+    border-radius: 5px;
+    
+}
+
+.ctn-exam .progress-btn{
+    text-align: center;
+    line-height: 36px;
+}
+
+.ctn-exam .progress-btn:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.ctn-exam .text-list{
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.ctn-exam .type-list2 a{
+    line-height: 70px;
+    /* margin-top: 10px; */
+}

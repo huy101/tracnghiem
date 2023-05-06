@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+p {
+    display: none;
+    background-color:bisque;
+    display: inline-flex;
+    font-size: 50px;
+    width: 200px;
+    height: 70px; 
+}
